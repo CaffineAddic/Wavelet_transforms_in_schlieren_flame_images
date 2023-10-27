@@ -1,38 +1,20 @@
-import matplotlib.pyplot as plt
-import matplotlib as mat
+import pywt
 import numpy as np
+import matplotlib.pyplot as plt
 
-xAmplitudes = np.random.exponential(10,10000) #your data here
-yAmplitudes = np.random.normal(50,10,10000) #your other data here - must be same array length
+t = np.linspace(0, 1, 200)
 
-x = np.array(xAmplitudes)   #turn x,y data into numpy arrays
-y = np.array(yAmplitudes)   #useful for regular matplotlib arrays
+# Finding signal by adding three different signals
+signal = np.cos(2 * np.pi * 7 * t) + np.real(np.exp(-7 * (t-0.4)**2)*np.exp(1j*2*np.pi*2*(t-0.4)))
+scales = np.arange(1, 31)  # No. of scales
 
-fig = plt.figure()          #create a canvas, tell matplotlib it's 3d
-ax = fig.add_subplot(111, projection='3d')
+coef, freqs = pywt.cwt(signal, scales, 'gaus1')  # Finding CWT using gaussian wavelet
 
-#make histogram stuff - set bins - I choose 20x20 because I have a lot of data
-hist, xedges, yedges = np.histogram2d(x, y, bins=(20,20))
-xpos, ypos = np.meshgrid(xedges[:-1]+xedges[1:], yedges[:-1]+yedges[1:])
-
-xpos = xpos.flatten()/2.
-ypos = ypos.flatten()/2.
-zpos = np.zeros_like (xpos)
-
-dx = xedges [1] - xedges [0]
-dy = yedges [1] - yedges [0]
-dz = hist.flatten()
-
-cmap = mat.colormaps.get_cmap('jet') # Get desired colormap - you can change this!
-max_height = np.max(dz)   # get range of colorbars so we can normalize
-min_height = np.min(dz)
-# scale each z to [0,1], and get their rgb values
-rgba = [cmap((k-min_height)/max_height) for k in dz] 
-
-bu = ax.bar3d(xpos, ypos, zpos, dx, dy, dz, color=rgba, zsort='average')
-plt.colorbar(bu)
-plt.title("X vs. Y Amplitudes for ____ Data")
-plt.xlabel("My X data source")
-plt.ylabel("My Y data source")
-plt.savefig("Your_title_goes_here")
+# Plotting scalogram
+plt.figure(figsize=(15, 10))
+plt.imshow(abs(coef), extent=[0, 200, 30, 1], interpolation='bilinear', cmap='bone',
+           aspect='auto', vmax=abs(coef).max(), vmin=abs(coef).max())
+plt.gca().invert_yaxis()
+plt.yticks(np.arange(1, 31, 1))
+plt.xticks(np.arange(0, 201, 10))
 plt.show()
