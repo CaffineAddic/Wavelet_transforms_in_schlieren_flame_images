@@ -40,12 +40,22 @@ This allowed all arrays to be in order of their dominating frequency for example
 
 Two images are plotted 1st showing their dominant frequency and the 2nd one showing their corresponding amplitudes.
 
+![](/home/saumya/.var/app/com.github.marktext.marktext/config/marktext/images/2024-05-13-20-20-00-image.png)
 
+<sub>1st image</sub>
+
+
+
+![](/home/saumya/.var/app/com.github.marktext.marktext/config/marktext/images/2024-05-13-20-20-06-image.png)
+
+<sub>2nd image</sub>
 
 
 
 Now we use pywt to see wavelet transform of the selected pixel to observe how the frequencies were present in the particular pixel with respect to time. 
 
+![](/home/saumya/.var/app/com.github.marktext.marktext/config/marktext/images/2024-05-13-20-21-34-image.png)
 
+<sub>pywt output</sub>
 
-  
+Further more here the time interval can be selected to observe values in that time frame.
