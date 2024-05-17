@@ -1,0 +1,12 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{smartdiagram}
+\smartdiagramset{font=\sffamily,
+   text width = 3cm, back arrow disabled}
+\tikzset{module/.append style=
+  { top color=\col, bottom color=\col},
+  every shadow/.style = {fill=none, shadow scale=0}}
+\begin{document}
+\smartdiagram[flow diagram]{
+  Read Image, Splitting Image into Patches, Averageing and Recombination of Patches, Removing DC Component, FFT Calculation, Low Pass Filter, Thresholding, Sorting of Dominant Frequecy, Selection of Pixel Value for Wavelet Transform, Spectogram}
+
+\end{document}
