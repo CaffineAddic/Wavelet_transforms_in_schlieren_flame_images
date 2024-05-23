@@ -19,8 +19,65 @@
 	proposed scheme have been written in Python 3.9.
 	
 	\begin{figure}[H]
+		\centering
 		\includegraphics[scale=1.11]{plot/meth.pdf}
 		\caption{Flowchart of the image processing procedure}\label{fig:k1}
 			\end{figure}
+			An exemplary instantaneous Schlieren image of the
+			liquid spray from the high-speed image sequence is shown
+			in Fig. \ref{fig:k2} 
 	
+	\begin{figure}[H]
+	\includegraphics[scale=.51]{plot/flame.png}
+	\caption{Image obtained from Schlieren imaging}\label{fig:k2}
+\end{figure}	
+	
+	\subsection{Patches Splitting and Recombination after Averaging}
+	The Schlieren images are high resolution to reduce computational overhead and time, the images are split into small image patches, further in each patch the average value of the entire patch is calculated and integrated together to form pooled images with a lower resolution while preserving information.
+	
+A sample image after the process is depicted in Fig. \ref{fig:k3}. Here, the image has been color-mapped to a specific scheme and is presented with a color bar, allowing for a visual representation of pixel intensity.
+	
+		\begin{figure}[H]
+		\includegraphics[scale=.51]{plot/pool.png}
+		\caption{Image obtained after integrating the average of patches}\label{fig:k3}
+	\end{figure}
+	
+\subsection{DC component removal \& Fast Fourier Transform (FFT) calculation}
+
+
+For each post-integrated image in the sequence, the average of all pixel values is computed and subtracted from each pixel to eliminate the DC component Fig. \ref{fig:k4}. This process, known as centering the data or mean normalization, helps remove bias in the dataset. After applying mean normalization to all images in the series, the FFT is calculated for each pixel, spanning across the entire integrated image sequence.
+
+		\begin{figure}[H]
+	\includegraphics[scale=.51]{plot/pool2.png}
+	\caption{Image after mean normalization}\label{fig:k4}
+\end{figure}
+
+\subsection{Low Pass Filtering (LPF)\& Thresholding}
+
+LPT filtering is utilized on the FFT series to eliminate noise, particularly targeting the low-frequency components. Additionally, a thresholding process based on the FFT amplitude is implemented to filter out frequency components with low amplitudes. This dual approach helps to enhance the quality of the FFT data by reducing noise and focusing on significant frequency components.
+
+\subsection{Sorting of Dominant Frequencies}
+
+The frequency values in the FFT array are sorted according to their FFT amplitudes. Subsequently, the highest amplitude value from each sorted FFT array is integrated into an image to visualize the most dominant frequency for each pixel. This process allows for the observation of the primary frequency components across the image, as illustrated in Fig. \ref{fig:k5}. Further the FFT amplitude of each dominating frequency is shown in Fig. \ref{fig:k6}.
+
+		\begin{figure}[H]
+	\includegraphics[scale=.51]{plot/freq.png}
+	\caption{Image displaying all the dominant frequency for each pixel}\label{fig:k5}
+\end{figure}
+
+		\begin{figure}[H]
+	\includegraphics[scale=.51]{plot/ampli.png}
+	\caption{Corresponding amplitude for each frequency in Fig. \ref{fig:k5}}\label{fig:k6}
+\end{figure}
+
+\subsection{Wavelet Transform Calculation and Spectrogram}
+
+From the dominant frequency flame image, a specific pixel of interest is chosen to extract temporal information of the frequencies present. This involves identifying the time duration and the frequencies displayed by the selected pixel. This targeted approach allows for a detailed analysis of the temporal characteristics and frequency components exhibited by the pixel under investigation. Further spectrogram is plotted to display that information as in Fig. \ref{fig:k7}.
+
+		\begin{figure}[H]
+	\includegraphics[scale=.51]{plot/spect.png}
+	\caption{The spectrogram of the pixel of interest.}\label{fig:k7}
+\end{figure}
+
+
 \end{document}
