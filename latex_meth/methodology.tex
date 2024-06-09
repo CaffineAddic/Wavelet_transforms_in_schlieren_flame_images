@@ -1,18 +1,16 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmic}
-\usepackage{graphicx}
-\usepackage{amsmath}
 \usepackage[linesnumbered,ruled]{algorithm2e}
-%\usepackage{algorithm}
-
+\usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage{float}
+\usepackage{listings}
+ \usepackage{algpseudocode}
 \usepackage{xfp}
+\usepackage{float}
+\usepackage{algorithm}
 \usepackage[section]{placeins}
 \begin{document}
 	
@@ -33,31 +31,19 @@
 			liquid spray from the high-speed image sequence is shown
 			in Fig. \ref{fig:k2} 
 	
+	\begin{algorithm}
+		\caption{FFT Analysis and Visualization}
+		\begin{algorithmic}[1]
+			\State \textbf{Input:} $\{P_{i}\}_{i=1}^{N}$, a set of $N$ input data points\State \textbf{Output:} $\{F_{i}\}_{i=1}^{M}$, a set of $M$ output frequency distributions\Procedure{DataPreprocessing}{}\State Load input data: $\{P_{i}\}_{i=1}^{N}$\State Select time range: $T = [t_{start}, t_{end}]$\State Crop data: $D = \{P_{i}\}_{i=1}^{N} \cap T$\EndProcedure\Procedure{Patchification}{}\State Create patches: $Patches = \{P_{i}\}_{i=1}^{N} \mapsto \{Patches_{i}\}_{i=1}^{N}$\State Calculate mean of patches: $\{Mean_{i}\}_{i=1}^{N}$\EndProcedure\Procedure{FFT}{}\State Calculate FFT of mean: $\{FFT_{i}\}_{i=1}^{N}$\State Filter FFT: $\{Filtered_{i}\}_{i=1}^{N}$\EndProcedure\Procedure{FrequencyDistribution}{}\State Calculate frequency distribution: $\{F_{i}\}_{i=1}^{M}$\State Sort and arrange data: $\{F_{i}\}_{i=1}^{M} \mapsto \{Sorted_{i}\}_{i=1}^{M}$\EndProcedure\Procedure{Visualization}{}\State Plot frequency distribution: $\{Sorted_{i}\}_{i=1}^{M} \mapsto \{Plot_{i}\}_{i=1}^{M}$\State Save plots: $\{Plot_{i}\}_{i=1}^{M} \mapsto \{File_{i}\}_{i=1}^{M}$\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+	
 	\begin{figure}[H]
 	\includegraphics[scale=.51]{plot/flame.png}
 	\caption{Image obtained from Schlieren imaging}\label{fig:k2}
 \end{figure}	
 
-\begin{algorithm}
 
-
-    \SetKwInOut{Input}{Input}
-\SetKwInOut{Output}{Output}
-
-
-\Input{The image time series data}
-\Output{Dominant frequency and corresponding amplitude images}
-
-
-	\eIf{$b=0$}
-	{
-		return $a$\;
-	}
-	{
-		return Euclid$(b,a\mod b)$\;
-	}
-	\caption{Pseudo code for FFT Analysis of Schlieren and Flame Luminosity}
-\end{algorithm}
 	
 	\subsection{Patches Splitting and Recombination after Averaging}
 	The Schlieren images are high resolution to reduce computational overhead and time, the images are split into small image patches, further in each patch the average value of the entire patch is calculated and integrated together to form pooled images with a lower resolution while preserving information.
@@ -100,6 +86,13 @@ The frequency values in the FFT array are sorted according to their FFT amplitud
 \subsection{Wavelet Transform Calculation and Spectrogram}
 
 From the dominant frequency flame image, a specific pixel of interest is chosen to extract temporal information of the frequencies present. This involves identifying the time duration and the frequencies displayed by the selected pixel. This targeted approach allows for a detailed analysis of the temporal characteristics and frequency components exhibited by the pixel under investigation. Further spectrogram is plotted to display that information as in Fig. \ref{fig:k7}.
+
+\begin{algorithm}
+	\caption{Wavelet Analysis of Pixel-Selected Intensity Time Series}
+	\begin{algorithmic}[1]
+		\State Input: $pl$ (Pixel location) [User Input]\State $s = data[:, pl[0], pl[1]]$\State $t = gen\_time(data.shape[0])$\State $t = t/fs + init\_time$\State $sc = gen\_scale(min\_scale, max\_scale)$\State $c, f = wt(s, sc, wavelet, fs)$\State Plot scalogram using $t$, $f$, and $c$ with 'inferno' colormap\State Save to file 'calo-' + $pl$ + '.png'
+\end{algorithmic}
+\end{algorithm}
 
 		\begin{figure}[H]
 	\includegraphics[scale=.51]{plot/spect.png}

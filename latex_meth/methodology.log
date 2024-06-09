@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.15)  9 JUN 2024 20:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.15)  9 JUN 2024 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,26 +199,68 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count278
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\algocf@hangindent=\skip54
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count279
 )
-\c@ALC@unique=\count278
-\c@ALC@line=\count279
-\c@ALC@rem=\count280
-\c@ALC@depth=\count281
-\ALC@tlm=\skip54
-\algorithmicindent=\skip55
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip55
+\skiplinenumber=\skip56
+\skiprule=\skip57
+\skiphlne=\skip58
+\skiptext=\skip59
+\skiplength=\skip60
+\algomargin=\skip61
+\skipalgocfslide=\skip62
+\algowidth=\dimen173
+\inoutsize=\dimen174
+\inoutindent=\dimen175
+\interspacetitleruled=\dimen176
+\interspacealgoruled=\dimen177
+\interspacetitleboxruled=\dimen178
+\algocf@ruledwidth=\skip63
+\algocf@inoutbox=\box55
+\algocf@inputbox=\box56
+\AlCapSkip=\skip64
+\AlCapHSkip=\skip65
+\algoskipindent=\skip66
+\algocf@nlbox=\box57
+\algocf@hangingbox=\box58
+\algocf@untilbox=\box59
+\algocf@skipuntil=\skip67
+\algocf@capbox=\box60
+\algocf@lcaptionbox=\skip68
+\algoheightruledefault=\skip69
+\algoheightrule=\skip70
+\algotitleheightruledefault=\skip71
+\algotitleheightrule=\skip72
+\c@algocfline=\count280
+\c@algocfproc=\count281
+\c@algocf=\count282
+\algocf@algoframe=\box61
+\algocf@algobox=\box62
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
@@ -233,59 +275,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen173
-\Gin@req@width=\dimen174
-)
-(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count282
-\algocf@hangindent=\skip56
-
-(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count283
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
-)
-\skiptotal=\skip57
-\skiplinenumber=\skip58
-\skiprule=\skip59
-\skiphlne=\skip60
-\skiptext=\skip61
-\skiplength=\skip62
-\algomargin=\skip63
-\skipalgocfslide=\skip64
-\algowidth=\dimen175
-\inoutsize=\dimen176
-\inoutindent=\dimen177
-\interspacetitleruled=\dimen178
-\interspacealgoruled=\dimen179
-\interspacetitleboxruled=\dimen180
-\algocf@ruledwidth=\skip65
-\algocf@inoutbox=\box55
-\algocf@inputbox=\box56
-\AlCapSkip=\skip66
-\AlCapHSkip=\skip67
-\algoskipindent=\skip68
-\algocf@nlbox=\box57
-\algocf@hangingbox=\box58
-\algocf@untilbox=\box59
-\algocf@skipuntil=\skip69
-\algocf@capbox=\box60
-\algocf@lcaptionbox=\skip70
-\algoheightruledefault=\skip71
-\algoheightrule=\skip72
-\algotitleheightruledefault=\skip73
-\algotitleheightrule=\skip74
-\c@algocfline=\count284
-\c@algocfproc=\count285
-\c@algocf=\count286
-\algocf@algoframe=\box61
-\algocf@algobox=\box62
+\Gin@req@height=\dimen179
+\Gin@req@width=\dimen180
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
@@ -309,60 +300,124 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count287
-\float@exts=\toks23
-\float@box=\box63
-\@float@everytoks=\toks24
-\@floatcapt=\box64
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count283
+\lst@gtempboxa=\box63
+\lst@token=\toks23
+\lst@length=\count284
+\lst@currlwidth=\dimen181
+\lst@column=\count285
+\lst@pos=\count286
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count287
+\lst@lineno=\count288
+\lst@maxwidth=\dimen184
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count289
+\lst@skipnumbers=\count290
+\lst@framebox=\box64
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count291
+\c@ALG@rem=\count292
+\c@ALG@nested=\count293
+\ALG@tlm=\skip73
+\ALG@thistlm=\skip74
+\c@ALG@Lnr=\count294
+\c@ALG@blocknr=\count295
+\c@ALG@storecount=\count296
+\c@ALG@tmpcounter=\count297
+\ALG@tmplength=\skip75
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2023-02-22 L3 programming layer (loader) 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
+\l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box65
 ))
 Package: xfp 2023-02-02 L3 Floating point unit
 )
-(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count299
+\float@exts=\toks24
+\float@box=\box66
+\@float@everytoks=\toks25
+\@floatcapt=\box67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks26
+\c@algorithm=\count300
+
+
+! LaTeX Error: Command \listofalgorithms already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 ...s}{\listof{algorithm}{\listalgorithmname}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 (./methodology.aux)
 \openout1 = `methodology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen181
-\scratchbox=\box66
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen182
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count301
+\scratchdimen=\dimen185
+\scratchbox=\box68
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen186
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -406,84 +461,94 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count307
 <plot/meth.pdf, id=1, 112.82451pt x 471.77454pt>
 File: plot/meth.pdf Graphic file (type pdf)
 <use plot/meth.pdf>
-Package pdftex.def Info: plot/meth.pdf  used on input line 29.
+Package pdftex.def Info: plot/meth.pdf  used on input line 27.
 (pdftex.def)             Requested size: 125.23494pt x 523.66873pt.
-<plot/flame.png, id=2, 508.90125pt x 333.245pt>
-File: plot/flame.png Graphic file (type png)
-<use plot/flame.png>
-Package pdftex.def Info: plot/flame.png  used on input line 37.
-(pdftex.def)             Requested size: 259.53621pt x 169.95268pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 
-Overfull \hbox (7.53621pt too wide) in paragraph at lines 37--38
-[][] 
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<plot/pool.png, id=4, 515.9275pt x 385.44pt>
-File: plot/pool.png Graphic file (type png)
-<use plot/pool.png>
-Package pdftex.def Info: plot/pool.png  used on input line 68.
-(pdftex.def)             Requested size: 263.11954pt x 196.5718pt.
-
-Overfull \hbox (11.11954pt too wide) in paragraph at lines 68--69
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[] \OT1/ptm/m/n/10 Cre-ate patches: $\OML/cmm/m/it/10 Patches \OT1/cmr/m/n/10 =
+ \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 P[]\OMS/cmsy/m/n/10 g[] 7!
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[] \OT1/ptm/m/n/10 Plot fre-quency dis-tri-bu-tion: $\OMS/cmsy/m/n/10 f\OML/cmm
+/m/it/10 Sorted[]\OMS/cmsy/m/n/10 g[] 7!
+ []
 
- [1
+<plot/flame.png, id=2, 508.90125pt x 333.245pt>
+File: plot/flame.png Graphic file (type png)
+<use plot/flame.png>
+Package pdftex.def Info: plot/flame.png  used on input line 42.
+(pdftex.def)             Requested size: 259.53621pt x 169.95268pt.
+
+Overfull \hbox (7.53621pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc} <./plot/meth.pdf> <./plot/flame.png>]
-<plot/pool2.png, id=43, 522.95375pt x 381.425pt>
+<plot/pool.png, id=45, 515.9275pt x 385.44pt>
+File: plot/pool.png Graphic file (type png)
+<use plot/pool.png>
+Package pdftex.def Info: plot/pool.png  used on input line 54.
+(pdftex.def)             Requested size: 263.11954pt x 196.5718pt.
+
+Overfull \hbox (11.11954pt too wide) in paragraph at lines 54--55
+[][] 
+ []
+
+<plot/pool2.png, id=46, 522.95375pt x 381.425pt>
 File: plot/pool2.png Graphic file (type png)
 <use plot/pool2.png>
-Package pdftex.def Info: plot/pool2.png  used on input line 78.
+Package pdftex.def Info: plot/pool2.png  used on input line 64.
 (pdftex.def)             Requested size: 266.70288pt x 194.52417pt.
 
-Overfull \hbox (14.70288pt too wide) in paragraph at lines 78--79
+Overfull \hbox (14.70288pt too wide) in paragraph at lines 64--65
 [][] 
  []
 
-<plot/freq.png, id=44, 508.90125pt x 397.485pt>
+<plot/freq.png, id=47, 508.90125pt x 397.485pt>
 File: plot/freq.png Graphic file (type png)
 <use plot/freq.png>
-Package pdftex.def Info: plot/freq.png  used on input line 91.
+Package pdftex.def Info: plot/freq.png  used on input line 77.
 (pdftex.def)             Requested size: 259.53621pt x 202.71466pt.
 
-Overfull \hbox (7.53621pt too wide) in paragraph at lines 91--92
+Overfull \hbox (7.53621pt too wide) in paragraph at lines 77--78
 [][] 
  []
 
-<plot/ampli.png, id=45, 533.995pt x 390.45876pt>
+<plot/ampli.png, id=48, 533.995pt x 390.45876pt>
 File: plot/ampli.png Graphic file (type png)
 <use plot/ampli.png>
-Package pdftex.def Info: plot/ampli.png  used on input line 96.
+Package pdftex.def Info: plot/ampli.png  used on input line 82.
 (pdftex.def)             Requested size: 272.33385pt x 199.13132pt.
 
-Overfull \hbox (20.33385pt too wide) in paragraph at lines 96--97
+Overfull \hbox (20.33385pt too wide) in paragraph at lines 82--83
 [][] 
  []
 
 [2 <./plot/pool.png> <./plot/pool2.png> <./plot/freq.png> <./plot/ampli.png>]
-<plot/spect.png, id=53, 451.6875pt x 223.83624pt>
+<plot/spect.png, id=56, 451.6875pt x 223.83624pt>
 File: plot/spect.png Graphic file (type png)
 <use plot/spect.png>
-Package pdftex.def Info: plot/spect.png  used on input line 105.
+Package pdftex.def Info: plot/spect.png  used on input line 98.
 (pdftex.def)             Requested size: 230.35757pt x 114.15497pt.
 
 
@@ -501,23 +566,26 @@ Before submitting the final camera ready copy, remember to:
 
  <./plot/spect.png>] (./methodology.aux) ) 
 Here is how much of TeX's memory you used:
- 5982 strings out of 476034
- 98761 string characters out of 5792854
- 1857388 words of memory out of 6000000
- 26345 multiletter control sequences out of 15000+600000
- 541208 words of font info for 86 fonts, out of 8000000 for 9000
+ 7757 strings out of 476034
+ 125570 string characters out of 5792854
+ 1863388 words of memory out of 6000000
+ 28103 multiletter control sequences out of 15000+600000
+ 540101 words of font info for 85 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 62i,12n,67p,512b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,7n,67p,1167b,286s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on methodology.pdf (3 pages, 259627 bytes).
+public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on methodology.pdf (3 pages, 294387 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
