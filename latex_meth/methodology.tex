@@ -5,6 +5,10 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+%\usepackage{algorithm}
+
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{float}
@@ -17,6 +21,8 @@
 	The proposed scheme consists of several sub modules as
 	shown in the flow diagram in Fig.\ref{fig:k1}. All the modules of the
 	proposed scheme have been written in Python 3.9.
+	
+	The code is provided here: https://github.com/CaffineAddic/ Wavelet\_transforms\_in\_schlieren\_flame\_images
 	
 	\begin{figure}[H]
 		\centering
@@ -31,6 +37,27 @@
 	\includegraphics[scale=.51]{plot/flame.png}
 	\caption{Image obtained from Schlieren imaging}\label{fig:k2}
 \end{figure}	
+
+\begin{algorithm}
+
+
+    \SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+
+
+\Input{The image time series data}
+\Output{Dominant frequency and corresponding amplitude images}
+
+
+	\eIf{$b=0$}
+	{
+		return $a$\;
+	}
+	{
+		return Euclid$(b,a\mod b)$\;
+	}
+	\caption{Pseudo code for FFT Analysis of Schlieren and Flame Luminosity}
+\end{algorithm}
 	
 	\subsection{Patches Splitting and Recombination after Averaging}
 	The Schlieren images are high resolution to reduce computational overhead and time, the images are split into small image patches, further in each patch the average value of the entire patch is calculated and integrated together to form pooled images with a lower resolution while preserving information.

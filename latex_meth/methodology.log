@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.20)  23 MAY 2024 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.15)  9 JUN 2024 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,6 +236,57 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \Gin@req@height=\dimen173
 \Gin@req@width=\dimen174
 )
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count282
+\algocf@hangindent=\skip56
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count283
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip57
+\skiplinenumber=\skip58
+\skiprule=\skip59
+\skiphlne=\skip60
+\skiptext=\skip61
+\skiplength=\skip62
+\algomargin=\skip63
+\skipalgocfslide=\skip64
+\algowidth=\dimen175
+\inoutsize=\dimen176
+\inoutindent=\dimen177
+\interspacetitleruled=\dimen178
+\interspacealgoruled=\dimen179
+\interspacetitleboxruled=\dimen180
+\algocf@ruledwidth=\skip65
+\algocf@inoutbox=\box55
+\algocf@inputbox=\box56
+\AlCapSkip=\skip66
+\AlCapHSkip=\skip67
+\algoskipindent=\skip68
+\algocf@nlbox=\box57
+\algocf@hangingbox=\box58
+\algocf@untilbox=\box59
+\algocf@skipuntil=\skip69
+\algocf@capbox=\box60
+\algocf@lcaptionbox=\skip70
+\algoheightruledefault=\skip71
+\algoheightrule=\skip72
+\algotitleheightruledefault=\skip73
+\algotitleheightrule=\skip74
+\c@algocfline=\count284
+\c@algocfproc=\count285
+\c@algocf=\count286
+\algocf@algoframe=\box61
+\algocf@algobox=\box62
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
@@ -260,11 +311,11 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
+\c@float@type=\count287
 \float@exts=\toks23
-\float@box=\box55
+\float@box=\box63
 \@float@everytoks=\toks24
-\@floatcapt=\box56
+\@floatcapt=\box64
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -272,8 +323,8 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count283
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box65
 ))
 Package: xfp 2023-02-02 L3 Floating point unit
 )
@@ -283,34 +334,34 @@ Package: placeins 2005/04/18  v 2.2
 (./methodology.aux)
 \openout1 = `methodology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen175
-\scratchbox=\box58
-\nofMPsegments=\count285
-\nofMParguments=\count286
+\scratchcounter=\count289
+\scratchdimen=\dimen181
+\scratchbox=\box66
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen176
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen182
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -358,78 +409,83 @@ e
 <plot/meth.pdf, id=1, 112.82451pt x 471.77454pt>
 File: plot/meth.pdf Graphic file (type pdf)
 <use plot/meth.pdf>
-Package pdftex.def Info: plot/meth.pdf  used on input line 23.
+Package pdftex.def Info: plot/meth.pdf  used on input line 29.
 (pdftex.def)             Requested size: 125.23494pt x 523.66873pt.
 <plot/flame.png, id=2, 508.90125pt x 333.245pt>
 File: plot/flame.png Graphic file (type png)
 <use plot/flame.png>
-Package pdftex.def Info: plot/flame.png  used on input line 31.
+Package pdftex.def Info: plot/flame.png  used on input line 37.
 (pdftex.def)             Requested size: 259.53621pt x 169.95268pt.
 
-Overfull \hbox (7.53621pt too wide) in paragraph at lines 31--32
+Overfull \hbox (7.53621pt too wide) in paragraph at lines 37--38
 [][] 
  []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
-Underfull \vbox (badness 1484) has occurred while \output is active []
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 <plot/pool.png, id=4, 515.9275pt x 385.44pt>
 File: plot/pool.png Graphic file (type png)
 <use plot/pool.png>
-Package pdftex.def Info: plot/pool.png  used on input line 41.
+Package pdftex.def Info: plot/pool.png  used on input line 68.
 (pdftex.def)             Requested size: 263.11954pt x 196.5718pt.
 
-Overfull \hbox (11.11954pt too wide) in paragraph at lines 41--42
+Overfull \hbox (11.11954pt too wide) in paragraph at lines 68--69
 [][] 
  []
 
-<plot/pool2.png, id=5, 522.95375pt x 381.425pt>
-File: plot/pool2.png Graphic file (type png)
-<use plot/pool2.png>
-Package pdftex.def Info: plot/pool2.png  used on input line 51.
-(pdftex.def)             Requested size: 266.70288pt x 194.52417pt.
 
-Overfull \hbox (14.70288pt too wide) in paragraph at lines 51--52
-[][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
-st/fonts/enc/dvips/base/8r.enc} <./plot/meth.pdf> <./plot/flame.png> <./plot/po
-ol.png>]
-<plot/freq.png, id=42, 508.90125pt x 397.485pt>
+st/fonts/enc/dvips/base/8r.enc} <./plot/meth.pdf> <./plot/flame.png>]
+<plot/pool2.png, id=43, 522.95375pt x 381.425pt>
+File: plot/pool2.png Graphic file (type png)
+<use plot/pool2.png>
+Package pdftex.def Info: plot/pool2.png  used on input line 78.
+(pdftex.def)             Requested size: 266.70288pt x 194.52417pt.
+
+Overfull \hbox (14.70288pt too wide) in paragraph at lines 78--79
+[][] 
+ []
+
+<plot/freq.png, id=44, 508.90125pt x 397.485pt>
 File: plot/freq.png Graphic file (type png)
 <use plot/freq.png>
-Package pdftex.def Info: plot/freq.png  used on input line 64.
+Package pdftex.def Info: plot/freq.png  used on input line 91.
 (pdftex.def)             Requested size: 259.53621pt x 202.71466pt.
 
-Overfull \hbox (7.53621pt too wide) in paragraph at lines 64--65
+Overfull \hbox (7.53621pt too wide) in paragraph at lines 91--92
 [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<plot/ampli.png, id=43, 533.995pt x 390.45876pt>
+<plot/ampli.png, id=45, 533.995pt x 390.45876pt>
 File: plot/ampli.png Graphic file (type png)
 <use plot/ampli.png>
-Package pdftex.def Info: plot/ampli.png  used on input line 69.
+Package pdftex.def Info: plot/ampli.png  used on input line 96.
 (pdftex.def)             Requested size: 272.33385pt x 199.13132pt.
 
-Overfull \hbox (20.33385pt too wide) in paragraph at lines 69--70
+Overfull \hbox (20.33385pt too wide) in paragraph at lines 96--97
 [][] 
  []
 
-<plot/spect.png, id=44, 451.6875pt x 223.83624pt>
+[2 <./plot/pool.png> <./plot/pool2.png> <./plot/freq.png> <./plot/ampli.png>]
+<plot/spect.png, id=53, 451.6875pt x 223.83624pt>
 File: plot/spect.png Graphic file (type png)
 <use plot/spect.png>
-Package pdftex.def Info: plot/spect.png  used on input line 78.
+Package pdftex.def Info: plot/spect.png  used on input line 105.
 (pdftex.def)             Requested size: 230.35757pt x 114.15497pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./plot/pool2.png> <./plot/freq.png> <./plot/ampli.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -445,21 +501,23 @@ Before submitting the final camera ready copy, remember to:
 
  <./plot/spect.png>] (./methodology.aux) ) 
 Here is how much of TeX's memory you used:
- 4940 strings out of 476041
- 80839 string characters out of 5793164
- 1856388 words of memory out of 6000000
- 25331 multiletter control sequences out of 15000+600000
- 537295 words of font info for 76 fonts, out of 8000000 for 9000
+ 5982 strings out of 476034
+ 98761 string characters out of 5792854
+ 1857388 words of memory out of 6000000
+ 26345 multiletter control sequences out of 15000+600000
+ 541208 words of font info for 86 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 62i,7n,67p,512b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,12n,67p,512b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on methodology.pdf (3 pages, 227798 bytes).
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on methodology.pdf (3 pages, 259627 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
