@@ -1,54 +1,53 @@
-# MAML and First-Order MAML: Implementation and Comparison
+# Wavelet Analysis of Schlieren Flame Images
 
-> Comparative implementation of Model-Agnostic Meta-Learning (MAML) and First-Order MAML (FOMAML) using PyTorch and Learn2Learn on the Omniglot dataset.
+> Multi-resolution analysis of Schlieren combustion images using Fourier and wavelet transforms for frequency-domain flame diagnostics.
 
 [![Python](https://img.shields.io/badge/Python-3-blue)](#)
-[![PyTorch](https://img.shields.io/badge/PyTorch-red)](#)
-[![Learn2Learn](https://img.shields.io/badge/Learn2Learn-Meta--Learning-success)](#)
+[![PyWavelets](https://img.shields.io/badge/PyWavelets-Wavelet%20Analysis-success)](#)
+[![Research](https://img.shields.io/badge/Status-Research-orange)](#)
 
-This repository investigates two widely used gradient-based meta-learning algorithms:
+This repository investigates the use of **Fourier** and **Wavelet Transforms** for analysing Schlieren images of combustion flames. The objective is to characterise spatial frequency content at multiple scales and explore how different transform methods capture combustion structures that are not readily visible in the spatial domain.
 
-- **Model-Agnostic Meta-Learning (MAML)**
-- **First-Order Model-Agnostic Meta-Learning (FOMAML)**
-
-The objective is to compare their optimisation behaviour, computational cost, and adaptation performance on few-shot image classification tasks using the **Omniglot** benchmark.
-
-The implementation is built using **PyTorch** and the **Learn2Learn** meta-learning library.
+The project forms part of a broader research effort on combustion diagnostics and complements my work on laser absorption spectroscopy and temperature reconstruction.
 
 ---
 
 ## Overview
 
-Meta-learning aims to learn models that can rapidly adapt to previously unseen tasks using only a handful of training examples.
+Schlieren imaging is a widely used optical technique for visualising density gradients in combustion flows.
 
-This project compares MAML and its first-order approximation under identical experimental settings, measuring both predictive performance and computational efficiency.
+While raw Schlieren images provide qualitative information, transform-domain analysis enables quantitative investigation of:
+
+- flame front structures
+- spatial frequency distribution
+- turbulent scales
+- localised combustion features
+
+This repository explores both global and local frequency analysis using Fourier and wavelet methods.
 
 ---
 
 ## Methodology
 
-The experimental pipeline consists of:
+The analysis pipeline consists of:
 
-1. Sampling episodic few-shot learning tasks from Omniglot.
-2. Inner-loop adaptation using support examples.
-3. Meta-update using query examples.
-4. Comparison between:
-
-   - MAML
-   - First-Order MAML
-
-5. Recording training time and convergence behaviour.
+1. Image preprocessing
+2. Fourier Transform (FFT)
+3. Wavelet decomposition
+4. Multi-scale feature extraction
+5. Frequency-domain visualisation
+6. Comparative analysis
 
 ---
 
 ## Features
 
-- MAML implementation using Learn2Learn
-- First-Order MAML implementation
-- Omniglot few-shot benchmark
-- Episodic task sampling
-- Training-time comparison
-- Performance evaluation
+- Schlieren image processing
+- 2D Fourier Transform
+- Multi-level wavelet decomposition
+- Frequency-domain visualisation
+- Multi-scale image analysis
+- Python implementation
 
 ---
 
@@ -56,9 +55,10 @@ The experimental pipeline consists of:
 
 ```text
 .
-├── MAML.ipynb
-├── report.pdf
+├── notebooks/
+├── images/
 ├── figures/
+├── utilities/
 └── README.md
 ```
 
@@ -69,19 +69,19 @@ The experimental pipeline consists of:
 Clone the repository
 
 ```bash
-git clone https://github.com/CaffineAddic/MAML-and-FOMAML-implimentaion-and-comparison.git
-cd MAML-and-FOMAML-implimentaion-and-comparison
+git clone https://github.com/CaffineAddic/Wavelet_transforms_in_schlieren_flame_images.git
+cd Wavelet_transforms_in_schlieren_flame_images
 ```
 
 Install the required dependencies
 
 ```bash
-pip install torch torchvision torchaudio matplotlib scipy learn2learn notebook
+pip install numpy scipy matplotlib opencv-python pywavelets jupyter
 ```
 
 ---
 
-## Running the Notebook
+## Usage
 
 Launch Jupyter Notebook
 
@@ -89,53 +89,50 @@ Launch Jupyter Notebook
 jupyter notebook
 ```
 
-Open the notebook and execute the cells sequentially.
+The notebooks demonstrate:
 
-If a CUDA-enabled GPU is unavailable, disable GPU execution by setting:
-
-```python
-cuda = False
-```
-
----
-
-## Experiments
-
-The notebook includes:
-
-- episodic few-shot training
-- MAML optimisation
-- FOMAML optimisation
-- execution-time measurements
-- convergence comparison
-
-The reference experiments were performed for **10,000 optimisation steps**, allowing direct comparison of training time and learning behaviour.
+- image preprocessing
+- FFT analysis
+- wavelet decomposition
+- coefficient visualisation
+- frequency comparison
 
 ---
 
 ## Results
 
-The project demonstrates the computational trade-off between full second-order MAML and the first-order approximation, highlighting the reduction in training cost achieved by FOMAML while maintaining competitive adaptation performance.
+The project demonstrates how wavelet transforms provide spatially localised frequency information that complements conventional Fourier analysis for combustion image diagnostics.
 
-Further discussion and experimental observations are included in the accompanying report.
+The resulting decomposition enables investigation of combustion structures across multiple spatial scales.
 
 ---
 
-## References
+## Applications
 
-Finn, C., Abbeel, P., & Levine, S. (2017).
+The techniques explored here are applicable to:
 
-**Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks.**
+- combustion diagnostics
+- turbulent flame analysis
+- image feature extraction
+- scientific image processing
+- optical flow visualisation
 
-Proceedings of ICML 2017.
+---
 
-https://arxiv.org/abs/1703.03400
+## Related Work
+
+This repository complements:
+
+- **Temperature Profile Estimation using Laser Absorption Spectroscopy and Multi-Output Gaussian Processes**
+- **Complex-Valued Neural Networks for PolSAR**
+- **MAML and First-Order MAML**
 
 ---
 
 ## Author
 
 **Saumya Roy**
+
 ---
 
 ## License
